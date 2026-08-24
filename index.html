@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 1 Secondmeter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.js' integrity='sha512-xKHmr+jWeRy0Xdm6qKH4bksz3IifYFjfH0efOHlNuCIz1KyN/iMb0HEs7YT/4p5H0CXW88z6gWbG8mZb9bu5Jw==' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <div class="timer">
+            <span class="big">
+                <span class="hour">00</span> :
+                <span class="minute">00</span> :
+                <span class="second">00</span> ,
+            </span>
+            <span class="milsecond">00</span>
+        </div>
+        <div class="btns">
+            <button id="start">
+                <i class="fa-solid fa-play"></i>
+            </button>
+            <button id="stop">
+                <i class="fa-solid fa-stop"></i>
+            </button>
+            <button id="checkpoint">
+                <i class="fa-solid fa-flag"></i>
+            </button>
+            <button id="reset">
+                <i class="fa-solid fa-undo"></i>
+            </button>
+        </div>
+        <table id="laps">
+            <thead>
+                <tr>
+                <th>Кола</th>
+                <th>Найшвидший/Найповільніший</th>
+                <th>Час</th>
+                <th>Усього</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

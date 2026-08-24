@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at center, #0a0a0a, #000);
+    color: #fff;
+    overflow: hidden;
+}
+
+.wrap {
+    background: radial-gradient(circle at center, #323232, #000);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Таймер */
+.timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    text-shadow: 0 0 15px #0ff, 0 0 30px #00f;
+}
+
+.big {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: glowPulse 2s infinite alternate;
+}
+
+.big p {
+    font-size: 24px;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+.milsecond {
+    font-size: 40px;
+    margin-left: 10px;
+    color: #ff0;
+    text-shadow: 0 0 10px #ff0, 0 0 20px #f90;
+}
+
+/* Кнопки */
+.btns {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btns button {
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #111, #333);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0,255,255,0.4);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ефект при наведенні */
+.btns button:hover {
+    background: linear-gradient(135deg, #0ff, #00f);
+    color: #000;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 20px #0ff, 0 0 40px #00f;
+}
+
+/* Ефект при натисканні */
+.btns button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px #0ff inset;
+}
+
+/* Спеціальні кнопки */
+.btns #stop {
+    background: linear-gradient(135deg, #400, #a00);
+    box-shadow: 0 0 15px rgba(255,0,0,0.6);
+}
+.btns #stop:hover {
+    background: linear-gradient(135deg, #f00, #c00);
+    color: #fff;
+    box-shadow: 0 0 20px #f33, 0 0 40px #f00;
+}
+
+.btns #reset {
+    background: linear-gradient(135deg, #664400, #aa7700);
+    box-shadow: 0 0 15px rgba(255,200,0,0.6);
+}
+.btns #reset:hover {
+    background: linear-gradient(135deg, #ffcc00, #ffaa00);
+    color: #000;
+    box-shadow: 0 0 20px #ff0, 0 0 40px #fc0;
+}
+
+/* Анімація glow */
+@keyframes glowPulse {
+    from {
+        text-shadow: 0 0 10px #0ff, 0 0 20px #00f;
+    }
+    to {
+        text-shadow: 0 0 25px #0ff, 0 0 50px #00f;
+    }
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  background: #222;
+  box-shadow: 0 0 15px #0ff;
+}
+
+th, td {
+  border: 1px solid #555;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #333;
+}
