@@ -1,5 +1,8 @@
 # Stopwatch ⏱️
 
+⚠️ WARNING: THIS PAGE CONTAINS UKRAINIAN LANGUAGE! 🇺🇦
+If you don't understand Ukrainian, please use a translator to translate the page.
+
 A simple and interactive **stopwatch web application** created with HTML, CSS, and JavaScript.
 
 The project allows users to start, pause, reset, and track elapsed time.
